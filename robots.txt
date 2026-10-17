@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://quasarbyte-tv.github.io/sitemap.xml

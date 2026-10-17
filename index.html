@@ -1,0 +1,118 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QuasarByte TV | Gear from the videos</title><meta name="color-scheme" content="dark"><meta name="theme-color" content="#15122A"><meta name="description" content="Find the one you saw, pick your country, and open it on Amazon."><meta property="og:title" content="QuasarByte TV | Gear from the videos"><meta property="og:description" content="Find the one you saw, pick your country, and open it on Amazon."><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta property="og:type" content="website"><meta property="og:site_name" content="QuasarByte TV"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://quasarbyte-tv.github.io/"><meta property="og:url" content="https://quasarbyte-tv.github.io/"><meta property="og:image" content="https://quasarbyte-tv.github.io/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="QuasarByte TV: Every gadget from the videos."><style>@font-face{font-family:"Poppins Head";src:url("fonts/Poppins-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+:root{color-scheme:dark;--bg:#15122A;--surface:#1F1A3A;--raised:#2A2450;--ink:#F4F0FF;--muted:#ADA3D0;--line:#352E5E;
+--jet:#9B8CFF;--on-jet:#15122A;--core:#FFB23E;--on-core:#211503;--core-ink:#FFB23E;
+--display:"Poppins Head",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--text:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--text)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--jet);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 17px/1 var(--display);letter-spacing:-.01em}
+.brand svg{width:28px;height:28px;flex:none}
+.links{display:flex;gap:20px;margin:0;padding:0;list-style:none;font-size:14px}
+.links a{display:flex;align-items:center;gap:8px;color:var(--muted);text-decoration:none}
+.links a:hover{color:var(--ink)}
+.links svg{width:18px;height:18px;flex:none;fill:currentColor}
+.top .links{gap:4px}
+.top .links a{justify-content:center;min-width:40px;min-height:40px}
+.top .links span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.hero{position:relative;overflow:hidden;padding-top:6px;padding-bottom:12px}
+.hero>*{position:relative}
+.hero .quasar{display:block;width:min(100%,400px);height:auto;margin:0 auto 10px;overflow:visible;pointer-events:none}
+h1{margin:0;max-width:11em;font:700 clamp(30px,9.2vw,48px)/1.02 var(--display);letter-spacing:-.018em;
+text-transform:uppercase;text-wrap:balance}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){h1{color:transparent;
+background:linear-gradient(180deg,#FFFFFF 25%,#BDB2F7);-webkit-background-clip:text;background-clip:text}}
+.lede{margin:16px 0 0;max-width:36ch;font-size:17px;line-height:1.55;color:var(--muted)}
+.picker{display:none;margin-top:26px}
+.js .picker{display:block}
+.picker p{margin:0 0 8px;font-size:14px;color:var(--muted)}
+.pills{display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:4px 16px 10px;scrollbar-width:none}
+.pills::-webkit-scrollbar{display:none}
+.pills button{flex:none;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);
+background:var(--surface);color:var(--ink);font:600 15px/1 var(--text);cursor:pointer}
+.pills button[aria-pressed="true"]{background:var(--jet);border-color:var(--jet);color:var(--on-jet)}
+.note{margin:10px 0 0;max-width:60ch;font-size:13px;color:var(--muted)}
+.shelf{padding-top:26px;padding-bottom:40px}
+.shelf-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 18px;margin-bottom:16px}
+h2{margin:0;font:700 22px/1.15 var(--display);letter-spacing:-.015em}
+.shelf-head .pills{margin:0 -16px;padding-bottom:4px;max-width:calc(100% + 32px)}
+.shelf-head .pills button{min-height:40px;padding:0 15px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.gadget{display:flex;flex-direction:column;min-width:0;padding:8px 8px 10px;border-radius:18px;background:var(--surface)}
+.gadget[hidden]{display:none}
+.shot{position:relative;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:var(--raised)}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.tile{display:grid;place-items:center;width:100%;height:100%;color:var(--jet);
+background:radial-gradient(circle at 1px 1px,var(--line) 1px,transparent 0) 0 0/16px 16px,linear-gradient(145deg,var(--surface),var(--raised))}
+.tile svg{width:44%;height:44%;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.kind,.fresh{position:absolute;left:7px;padding:4px 8px;border-radius:999px;font-size:11px;font-weight:600;line-height:1.2}
+.kind{bottom:7px;background:rgba(21,18,42,.72);color:#F4F0FF;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.fresh{top:7px;background:var(--core);color:var(--on-core)}
+h3{margin:10px 2px 0;font:700 15px/1.22 var(--display);letter-spacing:-.01em;overflow-wrap:anywhere}
+.seen{margin:5px 2px 10px;font-size:12.5px;line-height:1.35;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;
+-webkit-box-orient:vertical;overflow:hidden}
+.watch{font-size:12.5px;margin:-5px 2px 10px;color:var(--jet)}
+.stores{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.stores a{padding:6px 11px;border:1px solid var(--line);border-radius:999px;font-size:13px;text-decoration:none}
+.stores .verb{display:none}
+.js .stores a{display:none}
+.js .stores a.on{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;padding:6px 8px;
+border:1.5px solid var(--core-ink);border-radius:11px;color:var(--core-ink);font-size:13.5px;font-weight:650;text-align:center}
+.js .stores a.on:hover{background:var(--core);border-color:var(--core);color:var(--on-core)}
+.lead{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:12px;align-items:center;
+padding:10px;border-radius:20px}
+.lead .words{display:flex;flex-direction:column;min-width:0}
+.lead h3{margin-top:0;font-size:clamp(18px,5vw,22px);line-height:1.12;letter-spacing:-.02em}
+.lead .seen{font-size:13px;margin-bottom:12px}
+.lead .watch{font-size:13px}
+.js .lead .stores a.on{background:var(--core);border-color:var(--core);color:var(--on-core);font-size:14.5px}
+.js .lead .stores a.on:hover{filter:brightness(1.07)}
+.js .lead .stores .verb{display:inline;white-space:pre}
+.empty{margin:0;padding:34px 0;max-width:40ch;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:22px;padding-bottom:40px;font-size:13.5px;color:var(--muted)}
+footer p{margin:0 0 10px;max-width:68ch}
+footer .links{margin-top:16px}
+@media (min-width:640px){.top .links{gap:22px}.top .links a{min-width:0}
+.top .links span{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
+.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.gadget{padding:10px 10px 12px}
+h3{font-size:16.5px}.seen,.watch{font-size:13px}.js .stores a.on{font-size:14.5px}
+.js .stores .verb{display:inline;white-space:pre}.shelf-head .pills{margin:0;padding:4px 0}}
+@media (min-width:760px){.lead{grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:22px;padding:12px}
+.lead .words{padding:4px 12px 4px 0}.lead h3{font-size:clamp(24px,3.2vw,34px);line-height:1.06}
+.lead .seen,.lead .watch{font-size:15px}.lead .seen{margin-bottom:16px}
+.lead .stores{max-width:320px}.js .lead .stores a.on{min-height:50px;font-size:16px}}
+@media (min-width:1000px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{padding-top:54px;padding-bottom:20px}
+.hero .quasar{position:absolute;top:50%;right:0;width:clamp(380px,40vw,560px);margin:0;transform:translateY(-50%);opacity:.9}
+h1{font-size:clamp(44px,4.5vw,54px)}}
+.quasar{color:var(--ink)}
+.quasar .drift,.quasar .core{transform-box:view-box;transform-origin:50% 50%}
+@keyframes q-drift{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+@keyframes q-pulse{0%,100%{transform:scale(.9);opacity:.8}50%{transform:scale(1.12);opacity:1}}
+@keyframes q-jet{0%,100%{opacity:.35}50%{opacity:1}}
+@media (prefers-reduced-motion:no-preference){.pills button,.stores a{transition:background-color .15s,color .15s,border-color .15s}
+.quasar .drift{animation:q-drift 18s ease-in-out infinite alternate}
+.quasar .core{animation:q-pulse 5s ease-in-out infinite}
+.quasar .jet{animation:q-jet 3.6s ease-in-out infinite}}
+@keyframes q-glow{0%,100%{opacity:.65}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.quasar .orbiters{display:none}.quasar .core{animation:q-glow 6s ease-in-out infinite}.quasar .jet{animation:q-jet 6s ease-in-out infinite}}
+</style></head><body><header class="wrap top"><a class="brand" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="14" ry="5" fill="none" stroke="#9B8CFF" stroke-width="1.6" transform="rotate(-24 16 16)"/><circle cx="16" cy="16" r="4.6" fill="#FFB23E"/></svg>QuasarByte TV</a><ul class="links"><li><a href="https://www.instagram.com/quasarbytetv/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7.6 2h8.8A5.6 5.6 0 0 1 22 7.6v8.8a5.6 5.6 0 0 1-5.6 5.6H7.6A5.6 5.6 0 0 1 2 16.4V7.6A5.6 5.6 0 0 1 7.6 2Zm0 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm4.4 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 2a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Z"/><circle cx="17.3" cy="6.7" r="1.25"/></svg><span>Instagram</span></a></li><li><a href="https://www.youtube.com/channel/UCYIslFsi6QR8O19t-v3sUDw" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg><span>YouTube</span></a></li><li><a href="https://www.facebook.com/1369072282949438" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg><span>Facebook</span></a></li></ul></header><main id="top"><section class="wrap hero"><svg class="quasar" viewBox="0 70 400 260" aria-hidden="true"><defs><radialGradient id="q-core"><stop offset="0" stop-color="#FFE2A8"/><stop offset=".3" stop-color="#FFB23E"/><stop offset="1" stop-color="#FFB23E" stop-opacity="0"/></radialGradient><linearGradient id="q-jet" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FFB23E" stop-opacity="0"/><stop offset=".5" stop-color="#FFB23E" stop-opacity=".9"/><stop offset="1" stop-color="#FFB23E" stop-opacity="0"/></linearGradient></defs><g class="drift"><g fill="none" stroke="#9B8CFF" transform="rotate(-24 200 200)"><path id="q-ring1" d="M10 200a190 50 0 1 0 380 0a190 50 0 1 0-380 0" stroke-opacity=".28"/><path id="q-ring2" d="M58 200a142 37 0 1 0 284 0a142 37 0 1 0-284 0" stroke-opacity=".45"/><path id="q-ring3" d="M108 200a92 24 0 1 0 184 0a92 24 0 1 0-184 0" stroke-opacity=".7" stroke-width="1.5"/><g class="orbiters" stroke="none"><circle r="3" fill="currentColor"><animateMotion dur="34s" repeatCount="indefinite"><mpath href="#q-ring1"/></animateMotion></circle><circle r="2.6" fill="#9B8CFF"><animateMotion dur="22s" begin="-8s" repeatCount="indefinite"><mpath href="#q-ring2"/></animateMotion></circle><circle r="2.4" fill="#FFB23E"><animateMotion dur="13s" begin="-3s" repeatCount="indefinite"><mpath href="#q-ring3"/></animateMotion></circle></g></g></g><path class="jet" d="M120 380 280 20" stroke="url(#q-jet)" stroke-width="2"/><circle class="core" cx="200" cy="200" r="62" fill="url(#q-core)"/></svg><h1>Every gadget from the videos.</h1><p class="lede">Find the one you saw, pick your country, and open it on Amazon.</p><div class="picker"><p id="pick">Shopping from</p><div class="pills" role="group" aria-labelledby="pick"><button type="button" data-pick="US" aria-pressed="false">US</button><button type="button" data-pick="IN" aria-pressed="false">India</button><button type="button" data-pick="GB" aria-pressed="false">UK</button><button type="button" data-pick="CA" aria-pressed="false">Canada</button><button type="button" data-pick="DE" aria-pressed="false">Germany</button><button type="button" data-pick="AU" aria-pressed="false">Australia</button><button type="button" data-pick="AE" aria-pressed="false">UAE</button></div></div><p class="note">As an Amazon Associate I earn from qualifying purchases.</p></section><section class="wrap shelf"><div class="shelf-head"><h2>All gadgets</h2><div class="pills" role="group" aria-label="Kind of gadget"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="notebook interface" aria-pressed="false">Notebook interface</button><button type="button" data-filter="integrated development environment" aria-pressed="false">Integrated development environment</button></div></div><ul class="grid"><li class="gadget lead" id="v82" data-kind="notebook interface"><div class="shot"><img src="img/g82-project-jupyter-jupyter-notebook.jpg" alt="Footage from the video" width="720" height="720" decoding="async"><span class="fresh">Newest</span><span class="kind">Notebook interface</span></div><div class="words"><h3>Project Jupyter Jupyter Notebook</h3><p class="seen">From the video “Smart Notebook Interfaces for Data Science”</p><a class="watch" href="https://www.youtube.com/shorts/k2Ui1RUObaw" rel="noopener">Watch the video</a><div class="stores"><a data-country="US" href="https://www.amazon.com/s?k=Project+Jupyter+Jupyter+Notebook&amp;tag=quasarbytetv-20" target="_blank" rel="sponsored nofollow noopener"><span class="verb">View on </span>Amazon US</a><a data-country="IN" href="https://www.amazon.in/s?k=Project+Jupyter+Jupyter+Notebook&amp;tag=quasarbytetv-21" target="_blank" rel="sponsored nofollow noopener"><span class="verb">View on </span>Amazon India</a><a data-country="GB" href="https://www.amazon.co.uk/s?k=Project+Jupyter+Jupyter+Notebook" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon UK</a><a data-country="CA" href="https://www.amazon.ca/s?k=Project+Jupyter+Jupyter+Notebook" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Canada</a><a data-country="DE" href="https://www.amazon.de/s?k=Project+Jupyter+Jupyter+Notebook" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Germany</a><a data-country="AU" href="https://www.amazon.com.au/s?k=Project+Jupyter+Jupyter+Notebook" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Australia</a><a data-country="AE" href="https://www.amazon.ae/s?k=Project+Jupyter+Jupyter+Notebook" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon UAE</a></div></div></li><li class="gadget" id="v82" data-kind="notebook interface"><div class="shot"><img src="img/g82-google-colab.jpg" alt="Footage from the video" width="720" height="720" loading="lazy" decoding="async"><span class="kind">Notebook interface</span></div><h3>Google Colab</h3><p class="seen">From the video “Smart Notebook Interfaces for Data Science”</p><a class="watch" href="https://www.youtube.com/shorts/k2Ui1RUObaw" rel="noopener">Watch the video</a><div class="stores"><a data-country="US" href="https://www.amazon.com/s?k=Google+Colab&amp;tag=quasarbytetv-20" target="_blank" rel="sponsored nofollow noopener"><span class="verb">View on </span>Amazon US</a><a data-country="IN" href="https://www.amazon.in/s?k=Google+Colab&amp;tag=quasarbytetv-21" target="_blank" rel="sponsored nofollow noopener"><span class="verb">View on </span>Amazon India</a><a data-country="GB" href="https://www.amazon.co.uk/s?k=Google+Colab" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon UK</a><a data-country="CA" href="https://www.amazon.ca/s?k=Google+Colab" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Canada</a><a data-country="DE" href="https://www.amazon.de/s?k=Google+Colab" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Germany</a><a data-country="AU" href="https://www.amazon.com.au/s?k=Google+Colab" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Australia</a><a data-country="AE" href="https://www.amazon.ae/s?k=Google+Colab" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon UAE</a></div></li><li class="gadget" id="v82" data-kind="integrated development environment"><div class="shot"><img src="img/g82-posit-rstudio.jpg" alt="Footage from the video" width="720" height="720" loading="lazy" decoding="async"><span class="kind">Integrated development environment</span></div><h3>Posit RStudio</h3><p class="seen">From the video “Smart Notebook Interfaces for Data Science”</p><a class="watch" href="https://www.youtube.com/shorts/k2Ui1RUObaw" rel="noopener">Watch the video</a><div class="stores"><a data-country="US" href="https://www.amazon.com/s?k=Posit+RStudio&amp;tag=quasarbytetv-20" target="_blank" rel="sponsored nofollow noopener"><span class="verb">View on </span>Amazon US</a><a data-country="IN" href="https://www.amazon.in/s?k=Posit+RStudio&amp;tag=quasarbytetv-21" target="_blank" rel="sponsored nofollow noopener"><span class="verb">View on </span>Amazon India</a><a data-country="GB" href="https://www.amazon.co.uk/s?k=Posit+RStudio" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon UK</a><a data-country="CA" href="https://www.amazon.ca/s?k=Posit+RStudio" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Canada</a><a data-country="DE" href="https://www.amazon.de/s?k=Posit+RStudio" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Germany</a><a data-country="AU" href="https://www.amazon.com.au/s?k=Posit+RStudio" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon Australia</a><a data-country="AE" href="https://www.amazon.ae/s?k=Posit+RStudio" target="_blank" rel="nofollow noopener"><span class="verb">View on </span>Amazon UAE</a></div></li></ul></section></main><footer class="wrap"><p>As an Amazon Associate I earn from qualifying purchases. Each button opens a search for that product on Amazon.</p><p>The pictures are footage from the videos, not photos of the exact product. Prices and stock differ by country, so check the listing before you buy.</p><p class="legal">© 2026 QuasarByte TV. No cookies and no tracking: only the store you pick is kept, in this browser.</p><ul class="links"><li><a href="https://www.instagram.com/quasarbytetv/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7.6 2h8.8A5.6 5.6 0 0 1 22 7.6v8.8a5.6 5.6 0 0 1-5.6 5.6H7.6A5.6 5.6 0 0 1 2 16.4V7.6A5.6 5.6 0 0 1 7.6 2Zm0 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm4.4 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 2a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Z"/><circle cx="17.3" cy="6.7" r="1.25"/></svg><span>Instagram</span></a></li><li><a href="https://www.youtube.com/channel/UCYIslFsi6QR8O19t-v3sUDw" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg><span>YouTube</span></a></li><li><a href="https://www.facebook.com/1369072282949438" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg><span>Facebook</span></a></li></ul></footer><script>
+(function(){var d=document,root=d.documentElement,all=function(q){return [].slice.call(d.querySelectorAll(q))};
+root.classList.add("js");
+var codes=all("[data-pick]").map(function(b){return b.getAttribute("data-pick")});if(!codes.length)return;
+function guess(){var l=(navigator.languages&&navigator.languages[0])||navigator.language||"";
+var c=(l.split("-")[1]||"").toUpperCase();if(c==="UK")c="GB";return codes.indexOf(c)<0?codes[0]:c}
+function pick(c,keep){all("[data-pick]").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-pick")===c))});
+all(".stores a").forEach(function(a){a.classList.toggle("on",a.getAttribute("data-country")===c)});
+if(keep){try{localStorage.setItem("store",c)}catch(e){}}}
+var saved=null;try{saved=localStorage.getItem("store")}catch(e){}
+pick(codes.indexOf(saved)<0?guess():saved,false);
+d.addEventListener("click",function(e){var t=e.target.closest?e.target.closest("[data-pick],[data-filter]"):null;if(!t)return;
+if(t.hasAttribute("data-pick")){pick(t.getAttribute("data-pick"),true);return}
+var k=t.getAttribute("data-filter");
+all("[data-filter]").forEach(function(b){b.setAttribute("aria-pressed",String(b===t))});
+all(".gadget").forEach(function(g){g.hidden=k!=="all"&&g.getAttribute("data-kind")!==k})})})();
+</script></body></html>
